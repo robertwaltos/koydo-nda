@@ -1,0 +1,45 @@
+// NDA Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM043",
+  slug: "nda",
+  name: "NDA",
+  fullName: "National Defence Academy Exam",
+  alias: "National Defence Academy Exam",
+  family: "NDA",
+  category: "Government/defence",
+  subcategory: "Officer entry",
+  country: "India",
+  region: "South Asia",
+  languages: ["English","Hindi"],
+  estimatedAnnualTakers: "varies",
+  testingWindow: "Apr/Sep",
+  schedulePattern: "2 times/year",
+  ageGroup: "16-20",
+  targetUser: "Defence aspirant",
+  delivery: "Paper-based",
+  questionTypes: ["MCQ"],
+  adaptivity: "Linear",
+  sections: "Math + GAT",
+  scoringMode: "Merit + SSB",
+  essayOrSpeaking: "No",
+  ipRisk: "Low",
+  contentReuse: "aptitude_general",
+  uiEngine: "paper_objective",
+  monetizationPotential: "Medium",
+  tier: "Tier 4",
+  launchWave: "Wave 6",
+  themeColor: "#2563EB",
+  themeColorDark: "#1D4ED8",
+  localizationComplexity: "Medium",
+  offlineNeeded: true,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
